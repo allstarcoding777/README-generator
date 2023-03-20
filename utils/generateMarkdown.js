@@ -79,10 +79,10 @@ function generateMarkdown(data) {
   * Github: ${data.username}
   * ## Contributors
   ${data.contributers}
-  * ## License
-  ${renderLicenseSection(data.license)}
   * ## Deployed Application URL
   ${data.link}
+  * ## License
+  ${renderLicenseSection(data.license)}
 `;
 }
 

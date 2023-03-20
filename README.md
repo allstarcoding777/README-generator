@@ -17,7 +17,10 @@
   * Github: allstarcoding777
   * ## Contributors
   none
-  * ## License
-  This project is licensed under the MIT license.
   * ## Deployed Application URL
   https://allstarcoding777.github.io/README-generator/
+  * ## Github Repository URL
+  https://github.com/allstarcoding777/README-generator
+  * ## License
+  This project is licensed under the MIT license.
+  

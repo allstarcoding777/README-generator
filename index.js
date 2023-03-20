@@ -25,7 +25,7 @@ const questions = [
         name: "link",
         message: "Provide the URL where a user can access your deployed application."
     },
-    {   type: 'checkbox',
+    {   type: 'input',
         name: 'license',
         message: 'What license would you like to use?',
         choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
@@ -76,7 +76,8 @@ function init() {
         // pass in the fileName and data parameters
         // ...answers is a spread operator that allows us to pass in all of the answers
         console.log("Creating README.md...");
-        writeToFile("README.md", generateMarkdown({...answers}));
+        // writes file to the chosen directory
+        writeToFile("./dist/README.md", generateMarkdown({...answers}));
     });
 }
 
