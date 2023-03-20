@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+// packages needed for this application
 // inquirer is a Node module that allows us to interact with the user via the command line
 const inquirer = require('inquirer');
 // fs is a Node module that allows us to write files
@@ -8,7 +8,7 @@ const path = require('path');
 // requires the generateMarkdown file
 const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
+// array of questions for user input
 const questions = [
     {
         type: 'input',
@@ -20,16 +20,11 @@ const questions = [
         name: 'description',
         message: 'Describe the purpose of your project.',
     },
-    {
-        type: "input",
-        name: "link",
-        message: "Provide the URL where a user can access your deployed application."
-    },
     {   type: 'input',
-        name: 'license',
-        message: 'What license would you like to use?',
-        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
-    },
+    name: 'license',
+    message: 'What license would you like to use?',
+    choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
+},
     {
         type: 'input',
         name: 'usage',
@@ -52,12 +47,17 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'contributers',
-        message: 'Please list any contributers to your project. (If none, please type "none")',
+        name: 'contributors',
+        message: 'Please list any contributors to your project. (If none, please type "none")',
+    },
+    {
+        type: "input",
+        name: "link",
+        message: "Provide the URL where a user can access your deployed application."
     },
 ];
 
-// TODO: Create a function to write README file
+// function to write README file
 // function writeToFile with fileName and data parameters
 function writeToFile(fileName, data) {
     // writeFileSync is a method that allows us to write a file
@@ -67,7 +67,7 @@ function writeToFile(fileName, data) {
 }
 
 
-// TODO: Create a function to initialize app
+// creates a function to initialize app
 function init() {
     // pass in the questions array as a prompt
     inquirer.prompt(questions)
