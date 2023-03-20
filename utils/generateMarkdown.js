@@ -77,8 +77,9 @@ function generateMarkdown(data) {
   * Name: ${data.name}
   * Email: ${data.email}
   * Github: ${data.username}
-  * ## Contributers
+  * ## Contributors
   * ${data.contributers}
+  * ## License
   * ${renderLicenseSection(data.license)}
   * ## Deployed Application URL
   ${data.link}

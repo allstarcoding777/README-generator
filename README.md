@@ -15,8 +15,9 @@
   * Name: Alexandria Ellis
   * Email: allstarcoding777@gmail.com
   * Github: allstarcoding777
-  * ## Contributers
+  * ## Contributors
   * none
+  * ## License
   * This project is licensed under the MIT license.
   * ## Deployed Application URL
   https://allstarcoding777.github.io/README-generator/
