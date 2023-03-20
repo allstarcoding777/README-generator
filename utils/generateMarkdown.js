@@ -68,19 +68,19 @@ function generateMarkdown(data) {
   * [Usage](#usage)
   * [Contact](#contact-me)
   * [Contributers](#contributers)
-  * ${renderLicenseLink(data.license)}
+  ${renderLicenseLink(data.license)}
   * ## Description
-  * ${data.description}
+  ${data.description}
   * ## Usage
-  * ${data.usage}
+  ${data.usage}
   * ## Contact Me
   * Name: ${data.name}
   * Email: ${data.email}
   * Github: ${data.username}
   * ## Contributors
-  * ${data.contributers}
+  ${data.contributers}
   * ## License
-  * ${renderLicenseSection(data.license)}
+  ${renderLicenseSection(data.license)}
   * ## Deployed Application URL
   ${data.link}
 `;
