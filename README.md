@@ -19,8 +19,6 @@
   none
   * ## Demo
   Check out my demonstration of this app [HERE](https://drive.google.com/file/d/1YDGXmshyVorHv9_G9-jzOvVYjEeaz0sW/view)
-  * ## Deployed Application URL
-  https://allstarcoding777.github.io/README-generator/
   * ## Github Repository URL
   https://github.com/allstarcoding777/README-generator
   * ## License
