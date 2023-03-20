@@ -20,24 +20,15 @@ const questions = [
         name: 'description',
         message: 'Describe the purpose of your project.',
     },
-    {   type: 'input',
-        name: 'screenshot',
-        message: 'Please provide the path to the screenshot of your project.',
-    },
     {
         type: "input",
         name: "link",
         message: "Provide the URL where a user can access your deployed application."
     },
-    {   type: 'input',
+    {   type: 'checkbox',
         name: 'license',
         message: 'What license would you like to use?',
         choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
-    },
-    {
-        type: 'input',
-        name: 'require',
-        message: 'List any project dependencies.',
     },
     {
         type: 'input',
@@ -46,7 +37,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'creator',
+        name: 'username',
         message: 'What is your Github username?',
     },
     {
@@ -84,6 +75,7 @@ function init() {
     .then((answers) => {
         // pass in the fileName and data parameters
         // ...answers is a spread operator that allows us to pass in all of the answers
+        console.log("Creating README.md...");
         writeToFile("README.md", generateMarkdown({...answers}));
     });
 }
